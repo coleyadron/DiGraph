@@ -94,7 +94,9 @@ else:
     start = sys.argv[1]
     end = sys.argv[2]
 path = []
-if graph.find_path(start, end, path):
+if start == "null" and end == "null":
+    print("No PATH: There were NO Start and End points entered")
+elif graph.find_path(start, end, path):
     print("Found path from", start, "to", end, ":", path)
 else:
     print("No path found from", start, "to", end)
