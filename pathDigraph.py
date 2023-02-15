@@ -79,13 +79,13 @@ graph = DirectedGraph(edges)
 print("Number of vertices:", len(vertices))
 print("Number of edges:", sum([len(v) for v in graph.graph.values()]))
 if graph.is_connected():
-        print("The graph is a connected.")
+        print("The graph is connected: True")
 else:
-        print("The graph is not a connected.")
+        print("The graph is connected: False")
 if graph.is_DAG():
-        print("The graph is a DAG.")
+        print("The graph is a DAG: True")
 else:
-        print("The graph is not a DAG.")
+        print("The graph is a DAG: False")
 if len(sys.argv) == 1:
     start, end = "null", "null"
 elif len(sys.argv) < 3:
